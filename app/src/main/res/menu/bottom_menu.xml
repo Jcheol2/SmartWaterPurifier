@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="홈"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/calendar"
+        android:enabled="true"
+        android:icon="@drawable/calendar_icon"
+        android:title="메모"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="설정"
+        app:showAsAction="always" />
+</menu>

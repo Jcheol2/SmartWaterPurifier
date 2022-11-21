@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ListPreference
+            android:defaultValue="On"
+            android:entries="@array/onof"
+            android:entryValues="@array/onof_value"
+            android:key="setting1"
+            android:summary="시간 다시 알림,팝업, 최대 알람, 흔들어서 복용"
+            android:title="약물 알림" />
+        <ListPreference
+            android:defaultValue="On"
+            android:entries="@array/onof"
+            android:entryValues="@array/onof_value"
+            android:key="setting2"
+            android:summary="아침에 약물을 가져오도록 알림"
+            android:title="아침 알림" />
+        <ListPreference
+            android:defaultValue="On"
+            android:entries="@array/onof"
+            android:entryValues="@array/onof_value"
+            android:key="setting3"
+            android:summary="오늘 빠뜨린 복약을 알려드립니다."
+            android:title="저녁 복약 알림" />
+        <ListPreference
+            android:defaultValue="On"
+            android:entries="@array/onof"
+            android:entryValues="@array/onof_value"
+            android:key="setting4"
+            android:summary="주말 아침 약물 복용을 위해 다른 일정 설정"
+            android:title="주별 요약" />
+        <SwitchPreference
+            android:key="진동"
+            android:title="진동" />>
+        <SwitchPreference
+            android:key="LED"
+            android:title="LED 라이트" />>
+
+    <androidx.preference.PreferenceCategory android:title="처방전 보충">
+
+    <androidx.preference.CheckBoxPreference
+                android:defaultValue="false"
+                android:key="key_dependent"
+                android:title="알약 보충 알림" />
+            <ListPreference
+                android:dependency="key_dependent"
+                android:defaultValue="20"
+                android:entries="@array/med"
+                android:entryValues="@array/med_value"
+                android:key="key_dependent_child"
+                android:summary="알약이 떨어지기 전 보충하도록 알림"
+                android:title="기본값 알약 수" />
+
+</androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory android:title="지역 설정">
+
+    <ListPreference
+            android:defaultValue="ko"
+            android:entries="@array/language"
+            android:entryValues="@array/language_value"
+            android:key="key_language"
+            android:title="언어"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</PreferenceScreen>

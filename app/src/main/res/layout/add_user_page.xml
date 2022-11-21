@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="118dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="153dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/awre" />
+
+        <EditText
+            android:id="@+id/join_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="119dp"
+            android:ems="10"
+            android:foregroundGravity="center_horizontal"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <EditText
+            android:id="@+id/join_engname"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="119dp"
+            android:ems="10"
+            android:foregroundGravity="center_horizontal"
+            android:hint="영문 이름"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_name" />
+
+        <EditText
+            android:id="@+id/join_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="119dp"
+            android:ems="10"
+            android:foregroundGravity="center_horizontal"
+            android:hint="휴대폰 번호"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_engname" />
+
+        <EditText
+            android:id="@+id/join_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="119dp"
+            android:layout_marginEnd="119dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:foregroundGravity="center_horizontal"
+            android:hint="생년월일"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_phone" />
+
+        <EditText
+            android:id="@+id/join_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="119dp"
+            android:ems="10"
+            android:foregroundGravity="center_horizontal"
+            android:hint="성별"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_birth" />
+
+
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="160dp"
+            android:autoSizeTextType="uniform"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="귀하는 &quot;저장&quot; 버튼을 클릭함으로써 귀하의 개인정보와 건강 정보를 연결하는 것에 동의하며 당사의 사용 약관 및 개인정보 처리 방침을(를) 읽고 동의함을 확인하시는 겁니다."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_sex" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

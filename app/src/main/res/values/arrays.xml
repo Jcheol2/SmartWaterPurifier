@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="onof">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="onof_value">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>Korean</item>
+        <item>English</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="language_value">
+        <item>ko-kr</item>
+        <item>eng</item>
+        <item>chin</item>
+    </string-array>
+
+    <string-array name="med">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="med_value">
+        <item>ten</item>
+        <item>fifteen</item>
+        <item>twenty</item>
+        <item>twenty-five</item>
+        <item>thirteen</item>
+    </string-array>
+
+    <string-array name="list">
+        <item>박정철</item>
+        <item>이주호</item>
+        <item>조성진</item>
+        <item>정준호</item>
+    </string-array>
+</resources>
